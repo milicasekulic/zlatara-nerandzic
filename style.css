@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+	padding: 0;
+	background: #fff;
+}
+
+.navigation {
+    border: 1px solid #C6B3A1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width: 100%;
+    justify-content: space-between;
+    z-index: -1;
+    position: absolute;
+    top: 146px;
+    padding: 0 44px;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+ul li {
+
+	padding-right: 60px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    color: #000;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+
+}
+
+div#logo {
+    border: 1px solid #C6B3A1;
+    display: flex;
+    width: 20%;
+    height: 200px;
+    margin: 0 auto;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    align-self: center;
+    align-items: center;
+}
+
+#logo a {
+	margin: 0 auto;
+}
+
+#logo img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+ /* Slideshow container */
+.slideshow-container {
+  max-width:100%;
+  margin: auto;
+}
+
+.mySlides img{
+	width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    width: auto;
+    margin-top: -232px;
+    padding: 25px;
+    color: white;
+    font-weight: lighter;
+    font-size: 41px;
+    transition: 0.6s ease;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(203, 185, 168, 1);
+}
+
+.dots {
+	text-align: center;
+	margin-top: -57px;
+	z-index: 2;
+	position: relative;
+}
+
+.dot {
+  cursor:pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+section {
+    margin: 40px;
+    padding-top: 23px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 30px;
+    width: 33%;
+}
+
+.card img {
+    max-width: 100%;
+    /* height: auto; */
+    /* z-index: 0; */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.card img:hover {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0 0 38px 0 rgba(168, 160, 160, 0.5);
+    -moz-box-shadow: 0 0 38px 0 rgba(168, 160, 160, 0.5);
+    -webkit-box-shadow: 0 0 38px 0 rgba(168, 160, 160, 0.5);
+    -o-box-shadow: 0 0 38px 0 rgba(168, 160, 160, 0.5);
+}
+
+.card_txt {
+    border: 1px solid #C6B3A1;
+    background: #fff;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: -23px auto;
+    /* z-index: 4; */
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_txt:hover {
+    background: #C6B3A1;
+    color: #fff;
+}
+
+.card a {
+	color: #000;
+	text-decoration:none;
+}
+
+.card a:hover {
+	color: #fff;
+}
+
+.about {
+	background:url('img/cover_3.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    width: 50%;
+    line-height: 1.8;
+    padding: 50px;
+    padding-left: 130px;
+}

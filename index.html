@@ -1,0 +1,127 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zlatara Nerandžić</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|PT+Serif:400,400i,700,700i" rel="stylesheet">
+	<script src="https://use.fontawesome.com/a66d488a67.js"></script> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <header>
+ 	<div class="navigation">
+ 	<nav class="left_nav">
+ 		<ul>
+ 			<li><a href="#">Burme</a></li>
+ 			<li><a href="#">Minimal</a></li>
+ 			<li><a href="#">Nera</a></li>
+ 			<li><a href="#">Nakit</a></li>
+ 		</ul>
+ 	</nav>
+ 	<nav class="right_nav">
+ 		<ul>
+ 			<li><a href="#">O nama</a></li>
+ 			<li><a href="#">Savet Zlatara</a></li>
+ 			<li><a href="#">Novosti</a></li>
+ 			<li><a href="#">Kontakt</a></li>
+ 		</ul>
+ 	</nav>
+ 	</div>
+ 	<div id="logo">
+ 		<a href="index.html"><img src="img/logo.png"></a>
+ 	</div>
+ </header>
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img/cover_a.jpg">
+   </div>
+
+  <div class="mySlides fade">
+    <img src="img/cover_1b.jpg">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/cover_1c.jpg">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div class="dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+<section>
+	<div class="row">
+		<div class="card">
+			<a href=""><img src="img/card_2.jpg">
+			<div class="card_txt">OGRLICE</div>
+			</a>
+		</div>
+		<div class="card">
+			<a href=""><img src="img/card_4.jpg">
+			<div class="card_txt">BURME</div>
+			</a>
+		</div>
+		<div class="card">
+			<a href=""><img src="img/card_3.jpg">
+			<div class="card_txt">NARUKVICE</div>
+			</a>
+		</div>
+		<div class="card">
+			<a href=""><img src="img/card_8.jpg">
+			<div class="card_txt">MINĐUŠE</div>
+			</a>
+		</div>
+		<div class="card">
+			<a href=""><img src="img/card_1.jpg">
+			<div class="card_txt">PRSTENJE</div>
+			</a>
+		</div>
+		<div class="card">
+			<a href=""><img src="img/card_7.jpg">
+			<div class="card_txt">SAVET ZLATARA</div>
+			</a>
+		</div>
+	</div>
+</section>
+<div class="about">
+	<p>Zlatara Nerandžić neguje tradiciju kvalitetnog dizajna i izrade nakita od visoko kvalitetnih materijala od 2003. Godine.
+	Proverite zašto višedecenijska tradicija porodičnih zlatara garantuje jedinstveno iskustvo odabira i izrade nakita od plemenitih metala.<br>
+    Mi smo uvek tu za Vas, da Vam pomognemo u izboru, posavetujemo Vas, otvoreni smo za sva Vaša pitanja, sugestije i predloge. Raspolažemo nakitom za sve Vaše životne prilike.<br>
+	Svaki od komada koje smo izradili pokazuje našu ljubav prema umetnosti, zanatu, tradiciji i Vama, kojima to namenjujemo, garantujući kvalitet svakog detalja.</p>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
