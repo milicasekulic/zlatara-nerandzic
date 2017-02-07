@@ -32,7 +32,7 @@ ul li {
 	padding-right: 60px;
 }
 
-ul li a {
+li a {
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
@@ -40,7 +40,7 @@ ul li a {
     font-weight: 500;
 }
 
-ul li a:hover {
+li a:hover {
     text-decoration: underline;
 
 }
@@ -140,6 +140,13 @@ div#logo {
   to {opacity: 1}
 }
 
+
+.fadein{
+	opacity: 0;
+	display: flex;
+}
+
+
 section {
     margin: 40px;
     padding-top: 23px;
@@ -188,18 +195,14 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
-.card_txt:hover {
-    background: #C6B3A1;
-    color: #fff;
-}
-
 .card a {
 	color: #000;
 	text-decoration:none;
 }
 
-.card a:hover {
-	color: #fff;
+.card a:hover > .card_txt {
+    background: #C6B3A1;
+    color: #fff;
 }
 
 .about {
@@ -207,7 +210,8 @@ section {
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	height: auto;
+	height: 400px;
+    display: flex;
 }
 
 p {
@@ -218,6 +222,65 @@ p {
     line-height: 1.8;
     padding: 50px;
     padding-left: 130px;
+}
+
+article {
+    border: 2px solid #C6B3A1;
+    background: #fff;
+    width: 52%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 67%;
+    margin: 50px 65px;
+    align-items: center;
+}
+
+h5 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+article p {
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 80px;
+}
+
+article:hover > .card_txt {
+    background: #C6B3A1;
+    color: #fff;
+}
+
+.card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.8;
+    padding: 30px;
+
+}
+
+h4 {
+    font-family: 'PT Sans',sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: #bda48c;
+}
+
+.card h4 a {
+	text-decoration:none;
+    color: #bda48c;
+}
+
+.card h4 a:hover {
+	text-decoration:underline;
 }
 
 
